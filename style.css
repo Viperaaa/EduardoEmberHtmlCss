@@ -1,0 +1,135 @@
+*{
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: burlywood;
+}
+
+main{
+    font-size: large;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+nav{
+    width: 200px;
+    background-color: darkslategrey;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+footer {
+    font-size: large;
+}
+
+body{
+    background-image:url(img/shutterstock_1135932671.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img{
+    height: 35vh;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+video {
+    border: 5px solid orangered;
+    width: 60vh;
+    height: 34vh;
+}
+
+footer{
+    background-color: coral;
+}
+
+#droite{
+    display: flex;
+}
+
+#gen{
+    display: flex;
+    flex-flow: column;
+}
+
+#art{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+#pres{
+    background-color: darkgoldenrod;
+}
+
+#swag{
+    border: 2px solid black;
+    color: blue;
+    transform: scale(1.2);
+    font-size: 24px;
+    letter-spacing: 12px;
+    text-shadow: 2px 2px 4px rgba(255, 0, 149, 0.5);
+    color: red;
+    text-decoration: underline;
+}
+
+#roumanie {
+    color: yellow; 
+}
+
+#swag {
+    color: purple; 
+}
+
+.france {
+    color: blue; 
+}
+
+.orange {
+    color: orange; 
+}
+
+.vert {
+    color: green; 
+}
+
+.dialogue {
+    color: darkcyan; 
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        order: 2; 
+    }
+
+    #gen {
+        display: flex;
+        flex-flow: column;
+        order: 1; /
+    }
+
+    #art {
+        order: 3; 
+    }
+}
